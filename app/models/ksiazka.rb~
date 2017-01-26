@@ -1,0 +1,6 @@
+class Ksiazka < ApplicationRecord
+  validates :ilosc, numericality: { only_integer: true }
+  validates :ilosc, presence: true
+  validates :tytul, inclusion: {in: [true, false]}
+  validates :autor, inclusion: {in: [true, false]}
+end

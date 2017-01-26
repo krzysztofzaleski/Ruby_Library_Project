@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tytul:</strong>
+  <%= @ksiazka.tytul %>
+</p>
+
+<p>
+  <strong>Autor:</strong>
+  <%= @ksiazka.autor %>
+</p>
+
+<p>
+  <strong>Ilosc:</strong>
+  <%= @ksiazka.ilosc %>
+</p>
+
+<%= link_to 'Edit', edit_ksiazka_path(@ksiazka) %> |
+<%= link_to 'Back', ksiazkas_path %>

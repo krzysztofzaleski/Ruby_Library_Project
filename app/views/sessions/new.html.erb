@@ -1,0 +1,51 @@
+
+<table align="center" cellpadding="0">
+	<tr>
+		<td valign="top">
+	
+			<table cellpadding="0" cellspacing="0">
+				
+				<tr><td class="topm">Panel administratora</td></tr>
+<tr><td class="tlom">
+<br><% if flash[:alert] %>
+  <%= flash[:alert] %>
+<% end %>
+<%= form_tag do %>
+  <legend>Logowanie</legend>
+  <div>
+    <%= label_tag :email, 'Email:' %>
+    <%= text_field_tag :email, params[:email] %>
+  </div>
+  <div>
+    <%= label_tag :password, 'Hasło:' %>
+    <%= password_field_tag :password, params[:password] %>
+  </div>
+  <div>
+    <%= submit_tag "Zaloguj" %>
+  </div>
+<% end %>
+				</td></tr>
+				<tr><td class="dolm"></td></tr>
+			</table>
+			
+			<br>
+			
+		
+		<td width="1"></td>
+		
+		<td valign="top">
+			<table cellpadding="0" cellspacing="0">
+				<tr><td class="topn">Strona główna</td></tr>
+				<tr><td class="tlon">
+			
+
+
+
+				</td></tr>
+				<tr><td class="doln"></td></tr>
+			</table>	
+		</td>
+	</tr>
+</table>
+
+

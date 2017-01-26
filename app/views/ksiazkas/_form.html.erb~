@@ -1,0 +1,32 @@
+<%= form_for(ksiazka) do |f| %>
+  <% if ksiazka.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ksiazka.errors.count, "error") %> prohibited this ksiazka from being saved:</h2>
+
+      <ul>
+      <% ksiazka.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tytul %>
+    <%= f.text_field :tytul %>
+  </div>
+
+  <div class="field">
+    <%= f.label :autor %>
+    <%= f.text_field :autor %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ilosc %>
+    <%= f.text_area :ilosc %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

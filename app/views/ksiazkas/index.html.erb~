@@ -1,0 +1,69 @@
+<table align="center" cellpadding="0">
+	<tr>
+		<td valign="top">
+	
+			<table cellpadding="0" cellspacing="0">
+				
+				<tr><td class="topm">Menu główne</td></tr>
+				<tr><td class="tlom">
+				:: <a href="http://localhost:3000/welcome">Strona główna</a> <br>
+				:: <a href="http://localhost:3000/ksiazkas">Baza książek</a> <br>
+				:: <a href="http://localhost:3000/users">Zarządzaj użytkownikami</a><br>
+				:: <a href="http://localhost:3000/login">Zaloguj się</a> <br>
+				</td></tr>
+				<tr><td class="dolm"></td></tr>
+			</table>
+			
+			<br>
+			
+		
+		<td width="1"></td>
+		
+		<td valign="top">
+			<table cellpadding="0" cellspacing="0">
+				<tr><td class="topn">Spis książek</td></tr>
+				<tr><td class="tlon">
+			
+
+					<p id="notice"><%= notice %></p>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tytul</th>
+      <th>Autor</th>
+      <th>Ilosc</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ksiazkas.each do |ksiazka| %>
+      <tr>
+        <td><%= ksiazka.tytul %></td>
+        <td><%= ksiazka.autor %></td>
+        <td><%= ksiazka.ilosc %></td>
+        <!--<td><%= button_to 'Show', ksiazka %></td>-->
+        <td><%= link_to 'Edytuj', edit_ksiazka_path(ksiazka) %></td>
+        <td><%= link_to 'Usuń', ksiazka, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Dodaj książkę', new_ksiazka_path %>
+
+				</td></tr>
+				<tr><td class="doln"></td></tr>
+			</table>	
+		</td>
+	</tr>
+</table>
+
+
+
+

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fname: John
+  sname: Smith
+  email: john@smith.pl
+  password_digest: <%= BCrypt::Password.create('secret') %>
+
+two:
+  fname: Grzegorz
+  sname: Brzeczyszczykiewicz
+  email: grzegorz@brzeczyszczykiewicz.pl
+  password_digest: <%= BCrypt::Password.create('secret') %>

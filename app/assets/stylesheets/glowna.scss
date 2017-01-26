@@ -1,0 +1,214 @@
+// Place all the styles related to the Glowna controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+background-color:#545454;
+margin:0;
+padding:0;
+}
+#logout{color:red;
+font-size:15px;
+
+}
+
+fieldset{
+position:absolute;
+color:white;
+text-align:left;	
+border-style:solid;
+border-color:#626262;
+background-color:rgba(114, 106, 102, 0.85);
+-webkit-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
+}
+			
+ul a:link, ul a:visited {
+text-decoration: none;
+display: inline;
+font-weight: bold;
+font-size:20px;
+background: #ff6600;
+color: #fff;
+padding: 10px 10px 6px 0px;
+}
+ul.lista a:link, ul.lista a.lista:visited {
+text-decoration: none;
+display: inline;
+font-weight: bold;
+font-size:20px;
+background: #ff6600;
+color: #fff;
+padding: 0px 10px 6px 0px;
+}
+a{
+text-decoration: none;
+color:white;
+margin:0;
+padding:0;
+
+}
+img{
+float:left;
+margin:5px;
+width:25px;
+}
+.rimg{
+
+margin:5px;
+width:40px;
+}
+
+ul a:hover {
+	background-color: red;
+height:40px;
+}
+ul, ul li{
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height:40px;
+}
+.eul{
+float:right;
+margin-left:5px;
+
+}
+.lista{
+display:block;
+float:left;
+padding:1px 0px 1px;
+}
+.tytul{
+text-align:center;
+font-family:monotype corsiva;
+font-size:30px;
+border-top-style:solid;
+ border-top-color:gold;
+}
+.tytul1{
+text-align:center;
+font-family:monotype corsiva;
+font-size:25px;
+}
+
+#lewy{
+position:absolute;top:50px;
+padding:10px;
+width:190px;
+font-size:20px;
+background-color:#545454;
+z-index:1;
+}
+
+
+#naglowek1
+{
+position:fixed;
+padding:0px;
+margin:0px;
+height:40px;
+width:100%;
+font-size:30px;
+text-align:center;
+vertical-align:middle;
+font-family:monotype corsiva;
+color:white;
+z-index:1;
+background-color:#414141;
+border-bottom-style:solid;
+border-bottom-color:red;
+}
+#naglowek2
+{
+position:absolute;
+padding:0px;
+margin:0px;
+height:40px;
+width:100%;
+font-size:30px;
+text-align:center;
+vertical-align:middle;
+font-family:monotype corsiva;
+color:white;
+z-index:1;
+background-color:#414141;
+border-bottom-style:solid;
+ border-bottom-color:red;
+}
+#menu1{
+position:relative;top:10px;
+display:inline;
+padding:0px;
+margin:0px;
+height:40px;
+width:350px;
+font-size:30px;
+text-align:center;
+vertical-align:middle;
+font-family:monotype corsiva;
+color:white;
+z-index:2;
+background-color:yellow;
+border-bottom-style:solid;
+ border-bottom-color:red;
+}
+#menu2{
+position:relative;top:10px;
+display:inline;
+padding:0px;
+margin:0px;
+height:40px;
+width:350px;
+font-size:30px;
+text-align:center;
+vertical-align:middle;
+font-family:monotype corsiva;
+color:white;
+z-index:2;
+background-color:yellow;
+border-bottom-style:solid;
+ border-bottom-color:red;
+}
+#menu{
+position:absolute;top:-5px;left:5px;
+display:inline;
+padding:0px;
+margin:0px;
+
+width:350px;
+font-size:30px;
+text-align:center;
+vertical-align:middle;
+font-family:monotype corsiva;
+color:white;
+z-index:2;
+}
+#artykul
+{
+position:absolute;
+display:flex;
+margin-top:50px;
+left:200px;
+right:100px;
+background-color:#545454;
+font-size:20px;
+text-align:center;
+padding:15px;
+color:white;
+}
+#divContent1{
+display:none;
+}
+
+@media all and (max-width:1024px) {
+
+#naglowek2{display:none;}
+#artykul{left:10px;
+right:10px;}
+#lewy{display:none;}
+}
+
+@media all and (min-width:1024px) {
+#naglowek1{ display:none;}
+}
